@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÊM SẢN PHẨM MỚI"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ảnh xem trước (ID: imgPreview) -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_store_logo"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Nút chọn ảnh (ID: btnSelectImage) -->
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHỌN / CHỤP ẢNH SẢN PHẨM"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã sản phẩm (VD: HSML-050a)"
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên sản phẩm (VD: Wooden Ladle)"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chất liệu (VD: Gỗ nhãn / Longan)"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kích thước (VD: 30 x 8 cm)"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etMoq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng tối thiểu (MOQ)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá FOB USD (VD: 1.50)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnAddProductSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LƯU SẢN PHẨM"
+            android:textSize="16sp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

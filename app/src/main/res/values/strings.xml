@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Quản Lý Sản Phẩm</string>
-    <string name="store_name">Cửa Hàng Bán Lẻ Hồng Sơn</string>
-    <string name="store_logo_description">Logo cửa hàng</string>
-    <string name="total_products">Số lượng sản phẩm: 120</string>
-    <string name="total_value">Tổng giá trị: 150.000.000 VNĐ</string>
+    <string name="store_name">HỒNG SƠN TRADING PRODUCTION CO., LTD</string>
+    <string name="store_logo_description">Logo Hồng Sơn</string>
+    <string name="total_products">Số lượng sản phẩm: 8</string>
+    <string name="total_value">Tổng giá trị đơn hàng MOQ: $23,750 USD</string>
     <string name="btn_product_list">Danh sách sản phẩm</string>
     <string name="btn_add_product">Thêm sản phẩm</string>
     <string name="btn_login">Đăng nhập</string>
