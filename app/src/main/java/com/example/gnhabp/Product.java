@@ -1,46 +1,69 @@
 package com.example.gnhabp;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
+
     private String id;
     private String name;
     private String material;
     private String size;
     private int moq;
     private double price;
-    private int imageResId;
-    private String imageUri;
+    private String imageUriStr;
+    private int imageRes;
 
-    // Constructor cho sản phẩm mặc định (dùng imageResId trong drawable)
-    public Product(String id, String name, String material, String size, int moq, double price, int imageResId) {
+    public Product() {
+    }
+
+    public Product(String id, String name, String material, String size, int moq, double price, String imageUriStr) {
         this.id = id;
         this.name = name;
         this.material = material;
         this.size = size;
         this.moq = moq;
         this.price = price;
-        this.imageResId = imageResId;
-        this.imageUri = null;
+        this.imageUriStr = imageUriStr;
+        this.imageRes = 0;
     }
 
-    // Constructor cho sản phẩm thêm mới (dùng imageUri chọn từ máy)
-    public Product(String id, String name, String material, String size, int moq, double price, String imageUri) {
+    public Product(String id, String name, String size, double price, String imageUriStr) {
         this.id = id;
         this.name = name;
-        this.material = material;
         this.size = size;
-        this.moq = moq;
         this.price = price;
-        this.imageResId = R.drawable.ic_store_logo; // Ảnh mặc định nếu không chọn URI
-        this.imageUri = imageUri;
+        this.imageUriStr = imageUriStr;
     }
 
-    // Getters
+    public Product(String id, String name, String size, double price, int imageRes) {
+        this.id = id;
+        this.name = name;
+        this.size = size;
+        this.price = price;
+        this.imageRes = imageRes;
+    }
+
     public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+
     public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
     public String getMaterial() { return material; }
+    public void setMaterial(String material) { this.material = material; }
+
     public String getSize() { return size; }
+    public void setSize(String size) { this.size = size; }
+
     public int getMoq() { return moq; }
+    public void setMoq(int moq) { this.moq = moq; }
+
     public double getPrice() { return price; }
-    public int getImageResId() { return imageResId; }
-    public String getImageUri() { return imageUri; }
+    public void setPrice(double price) { this.price = price; }
+
+    public String getImageUriStr() { return imageUriStr; }
+    public void setImageUriStr(String imageUriStr) { this.imageUriStr = imageUriStr; }
+
+    public int getImageRes() { return imageRes; }
+    public void setImageRes(int imageRes) { this.imageRes = imageRes; }
 }

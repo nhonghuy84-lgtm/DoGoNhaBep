@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Tiêu đề & Nút Quay lại -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← QUAY LẠI"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHI TIẾT SẢN PHẨM"
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/imgDetailProduct"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sp_coi_chay" />
+
+    <!-- Mã sản phẩm -->
+    <TextView
+        android:id="@+id/tvDetailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã sản phẩm: "
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/tvDetailPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá sản phẩm: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Kích thước -->
+    <TextView
+        android:id="@+id/tvDetailSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kích thước: "
+        android:textSize="15sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Chất liệu -->
+    <TextView
+        android:id="@+id/tvDetailMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chất liệu: "
+        android:textSize="15sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
